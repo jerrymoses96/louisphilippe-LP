@@ -12,10 +12,16 @@ body {
   overflow-x: hidden;
 }
 
+
+/* ---wrapper---  */
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
 /* ----header section----  */
 
-header {
-}
 
 .sticky {
     position: fixed;
@@ -31,10 +37,7 @@ header .top {
   color: white;
 }
 
-.wrapper {
-  width: 95%;
-  margin: 0 auto;
-}
+
 
 header .top .wrapper .header-top {
   display: flex;
@@ -106,8 +109,17 @@ header .bottom .wrapper .header-bottom ul {
   gap: 10px;
   margin-right: 20px;
   
+  
 }
 
+header .bottom .wrapper .header-bottom ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header .bottom .wrapper .header-bottom ul li a:hover {
+  color: #c59a31;
+}
 header .bottom .wrapper .header-bottom input {
   border: none;
   border-bottom: 1px solid black;
@@ -120,7 +132,9 @@ header .bottom .wrapper .header-bottom input {
   gap: 30px;
 }
 
-/* hamburger  */
+
+/*--- hamburger---  */
+
 
 .hamburger{
   display: none;
@@ -172,7 +186,7 @@ header .bottom .wrapper .header-bottom input {
   display: none;
 }
 
-/* features section  */
+/*--- features section --- */
 
 #features {
   background-image: url(assets/lp_usp_banner_2x.jpeg);
@@ -190,9 +204,11 @@ header .bottom .wrapper .header-bottom input {
   /* flex-wrap: wrap; */
   
 }
+
 #features p {
   color: white;
 }
+
 #features .image-1 {
   width: 150px;
   text-align: center;
@@ -324,8 +340,7 @@ header .bottom .wrapper .header-bottom input {
   /* flex-wrap: wrap; */
 
 }
-footer .wrapper {
-}
+
 
 footer .wrapper .footer-box1 {
   font-size: 12px;
@@ -397,21 +412,23 @@ footer .wrapper .footer-box3 .social-media {
 
 }
 
-footer .wrapper .footer-box3 .social-media p {
-    
-}
 
 footer .wrapper .footer-box3 .social-media i {
     font-size: 25px;
     margin-right: 10px;
 }
 
-/* media queries  */
+/* -------------------------media queries ------------------------- */
+
+
+/* Breakpoint for screens up to 1440px wide */
 
 @media all and (max-width: 1440px) {
 
 
 }
+
+/* Breakpoint for screens up to 1280px wide */
 
 @media all and (max-width: 1280px) {
 
@@ -463,21 +480,13 @@ footer .wrapper .footer-box3 .social-media i {
     left: 0;
   }
 
-
-  
   .bottom-image{
     margin-left: 250px;
   }
 
-
-
-
   .header-bottom{
     position: relative;
   }
-
-
-  
 
   header .top .wrapper .header-top ul li:not(:last-child) {
     display: none;
@@ -493,9 +502,6 @@ footer .wrapper .footer-box3 .social-media i {
     display: none;
   }
 
-  /* header .bottom .wrapper .header-bottom{
-    justify-content: space-between;
-  } */
 
   .mobile-icons{
     display: flex;
@@ -506,10 +512,11 @@ footer .wrapper .footer-box3 .social-media i {
     z-index: 999;
   }
 
-  
-  
-
 }
+
+
+/* Breakpoint for screens up to 1080px wide */
+
 
 @media all and (max-width: 1080px) {
 
@@ -523,6 +530,11 @@ footer .wrapper .footer-box3 .social-media i {
   }
 
 }
+
+
+/* Breakpoint for screens up to 980px wide */
+
+
 
 @media all and (max-width: 980px) {
   #delivery-details {
@@ -540,6 +552,11 @@ footer .wrapper .footer-box3 .social-media i {
   }
 
 }
+
+
+/* Breakpoint for screens up to 768px wide */
+
+
 
 @media all and (max-width: 768px) {
   #delivery-details{
@@ -561,6 +578,11 @@ footer .wrapper .footer-box3 .social-media i {
   
 
 }
+
+
+/* Breakpoint for screens up to 640px wide */
+
+
 
 @media all and (max-width: 640px) {
  
@@ -584,7 +606,7 @@ footer .wrapper .footer-box3 .social-media i {
 }
 
   
-
+/* Breakpoint for screens up to 540px wide */
 
 
 @media all and (max-width: 540px) {
@@ -611,6 +633,11 @@ footer .wrapper .footer-box3 .social-media i {
   
 
 }
+
+
+/* Breakpoint for screens up to 480px wide */
+
+
 
 @media all and (max-width: 480px) {
 
@@ -645,7 +672,17 @@ footer .wrapper .footer-box3 .social-media i {
   .bottom-image{
     margin-left: 80px;
   }
+  .mobile-icons{
+    gap: 30px;
+  }
+  .bottom-image{
+    margin-left: 20px;
+  }
 }
+
+
+
+/* Breakpoint for screens up to 360px wide */
 
 
 
