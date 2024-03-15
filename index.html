@@ -179,26 +179,41 @@
       </div>
     </section>
 
-    <!-- spotlight section  -->
+    <!-- slider section  -->
 
-    <section id="spotlight">
-      <div class="spotlight-image">
-        <img
-          class="image-1"
-          src="assets/LP_D_HB_170_Blazer.jpeg"
-          alt="LP Blazer"
-        />
-        <img
-          class="image-2"
-          src="assets/LP_M_HB_160_Linen_Shirts.jpeg"
-          alt="lp-coral"
-        />
+    <div class="slider-main" style="position: relative">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="assets/LP_D_HB_164_Flipflop.jpeg" style="width: 100%" />
+          <div class="text">1 / 4</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="assets/LP_D_HB_167_V2_Coral.jpeg" style="width: 100%" />
+          <div class="text">2 / 4</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="assets/LP_D_HB_169_T_Shirts.jpeg" style="width: 100%" />
+          <div class="text">3 / 4</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="assets/LP_D_HB_170_Blazer.jpeg" style="width: 100%" />
+          <div class="text">4 / 4</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-    </section>
+      <br />
+      <div class="dot-container" style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </div>
 
     <!-- features section -->
 
-    <section id="features" >
+    <section id="features">
       <div class="wrapper">
         <div class="image-1">
           <div class="features-image-1">
@@ -299,7 +314,28 @@
 
         <div class="footer-box3">
           <h4>Join the Louis Philippe Community</h4>
-          <input type="text" placeholder="Enter your e-mail/mobile number" />
+
+          <form id="myForm">
+            <div class="input-container">
+              <input
+                type="text"
+                name="email_or_mobile"
+                id="email_or_mobile"
+                placeholder="Enter your e-mail / mobile number"
+              />
+              <button type="submit">submit</button>
+            </div>
+          </form>
+
+          <!-- modal   -->
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <p id="modalContent"></p>
+              <span class="close">&times;</span>
+            </div>
+          </div>
+
           <p>
             Sign up for updates on the latest Louis Philippe collection,
             campaigns and videos.
@@ -336,5 +372,7 @@
     </script>
 
     <script src="app.js"></script>
+    <script src="script.js"></script>
+    <script src="YourScript.js"></script>
   </body>
 </html>
