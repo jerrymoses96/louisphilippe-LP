@@ -87,10 +87,7 @@ header .bottom {
   
 
 }
-/* .wrapper {
-  width: 95%;
-  margin: 0 auto;
-} */
+
 
 header .bottom .wrapper .header-bottom {
   display: flex;
@@ -129,9 +126,9 @@ header .bottom .wrapper .header-bottom input {
 }
 .mobile-icons{
   display: none;
-  /* display: flex; */
+
   gap: 30px;
-  /* justify-content: space-evenly; */
+
 }
 
 
@@ -216,6 +213,7 @@ border-radius: 50%;
 
 /* ---spotlight section--- */
 
+
 #spotlight .spotlight-image {
   width: 100%;
 }
@@ -226,6 +224,7 @@ border-radius: 50%;
 .image-2{
   display: none;
 }
+
 
 /*--- features section --- */
 
@@ -304,6 +303,7 @@ border-radius: 50%;
 
 /* ---referrel section--- */
 
+
 #referral-banner {
   background-color: #282828;
   padding-top: 15px;
@@ -357,6 +357,7 @@ border-radius: 50%;
 
 /* ---delivery details section--- */
 
+
 #delivery-details {
  
   font-size: 12px;  
@@ -377,6 +378,7 @@ border-radius: 50%;
 
 /* ---footer section  */
 
+
 #footer  {
   background-color: #222222;
   color: white;
@@ -385,7 +387,6 @@ border-radius: 50%;
 #footer .wrapper{
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   flex-wrap: wrap;
 }
 
@@ -413,7 +414,6 @@ footer .wrapper .footer-box1 ul li:first-child {
 
 footer .wrapper .footer-box2 {
   font-size: 12px;
-  /* margin-right: 290px; */
 }
 
 footer .wrapper .footer-box2 ul {
@@ -427,7 +427,6 @@ footer .wrapper .footer-box2 ul li:first-child {
 }
 
 footer .wrapper .footer-box3 {
-  /* display: flex; */
   font-size: 12px;
   display: flex;
   flex-direction: column;
@@ -446,7 +445,6 @@ footer .wrapper .footer-box3 input {
     color: white;
     padding: 10px;
     width: 100%;
-    /* width: 400px; */
     border: 1px solid white;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -460,10 +458,7 @@ footer .wrapper .footer-box3 p {
 
 footer .wrapper .footer-box3 .social-media {
   display: flex;
-  justify-content: space-between;
-  
-  /* gap: 115px; */
-  
+  justify-content: space-between;  
   align-items: center;
   margin-top: 20px;
 
@@ -495,6 +490,7 @@ footer .wrapper .footer-box3 .social-media i:last-child{
 @media all and (max-width: 1280px) {
 
   /* hamburger  */
+
   .hamburger{
     display: block;
     z-index: 999;
@@ -529,7 +525,6 @@ footer .wrapper .footer-box3 .social-media i:last-child{
     padding-top: 40px;
     opacity: 1;
     font-weight: 800;
-    /* box-shadow: 0 0 50px  rgba(0, 0, 0, 0.5); */
    
   }
 
